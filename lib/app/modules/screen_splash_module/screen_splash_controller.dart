@@ -1,11 +1,13 @@
 import 'package:get/get.dart';
-/**
- * NPSTX Template
- * */
+import 'package:solo_music/app/routes/app_pages.dart';
 
 class ScreenSplashController extends GetxController{
+  var appName = "Solo Music";
 
-  var _obj = ''.obs;
-  set obj(value) => _obj.value = value;
-  get obj => _obj.value;
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+    Future.delayed(const Duration(seconds: 3), () {Get.offAllNamed(Routes.SCREEN_VERIFY_MOBILE_NO);});
+  }
 }
