@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Solo Music',
       theme: appThemeData,
+      debugShowCheckedModeBanner: false,
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.pages,
     );
