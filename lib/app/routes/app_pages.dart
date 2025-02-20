@@ -1,3 +1,5 @@
+import '../../app/modules/screen_verify_otp_module/screen_verify_otp_page.dart';
+import '../../app/modules/screen_verify_otp_module/screen_verify_otp_bindings.dart';
 import 'package:solo_music/app/modules/screen_verify_mobile_no_module/screen_verify_mobile_no_page.dart';
 
 import '../../app/modules/screen_splash_module/screen_splash_bindings.dart';
@@ -22,6 +24,11 @@ abstract class AppPages {
       name: Routes.SCREEN_VERIFY_MOBILE_NO,
       page: () => ScreenVerifyMobileNoPage(),
       binding: ScreenVerifyMobileNoBinding(),
+    ),
+    GetPage(
+      name: Routes.SCREEN_VERIFY_OTP,
+      page: () => ScreenVerifyOtpPage(),
+      binding: ScreenVerifyOtpBinding(),
     ),
   ];
 }

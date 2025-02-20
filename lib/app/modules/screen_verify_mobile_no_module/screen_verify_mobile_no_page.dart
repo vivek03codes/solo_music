@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:neopop/neopop.dart';
 import 'package:solo_music/app/modules/screen_verify_mobile_no_module/screen_verify_mobile_no_controller.dart';
+import 'package:solo_music/app/routes/app_pages.dart';
 
 class ScreenVerifyMobileNoPage extends GetView<ScreenVerifyMobileNoController> {
   const ScreenVerifyMobileNoPage({super.key});
@@ -26,7 +27,9 @@ class ScreenVerifyMobileNoPage extends GetView<ScreenVerifyMobileNoController> {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(10.0),
         child: NeoPopTiltedButton(
-          onTapUp: () {},
+          onTapUp: () {
+            Get.toNamed(Routes.SCREEN_VERIFY_OTP);
+          },
             decoration: const NeoPopTiltedButtonDecoration(
               shadowColor: Colors.white,
               showShimmer: true,
@@ -42,7 +45,7 @@ class ScreenVerifyMobileNoPage extends GetView<ScreenVerifyMobileNoController> {
                   fontWeight: FontWeight.w600
                 ),
               ),
-            )
+            ),
         ),
       ),
     );
